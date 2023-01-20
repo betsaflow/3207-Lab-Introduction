@@ -3,13 +3,32 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main(){
-	srand((unsigned)time(0));
 
-	short asciiUpperCase = 65;
-	short numLetters = 26;
+char word() {
+    srand((unsigned) time(0));
 
-	char example = (char)(rand()%numLetters+asciiUpperCase);
+    for (int i = 0; i < 7; i++) {
 
-	printf("%c \n",example);
-} 
+        short asciiUpperCase = 65;
+        short numLetters = 26;
+        char example = (char) (rand() % numLetters + asciiUpperCase);
+        printf("%c ", example);
+    }
+}
+    int main(){
+        word();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
